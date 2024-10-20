@@ -9,8 +9,6 @@ from sqlalchemy import pool
 
 from alembic import context
 
-from models.users import User
-
 load_dotenv()
 
 # this is the Alembic Config object, which provides

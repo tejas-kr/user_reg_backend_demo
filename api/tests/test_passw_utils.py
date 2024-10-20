@@ -1,7 +1,7 @@
 """
 Test File for Password Utils
 """
-from utils.passw_utils import PasswordUtils
+from api.utils.passw_utils import PasswordUtils
 
 
 class TestPasswUtils:

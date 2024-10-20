@@ -1,13 +1,13 @@
 import os
 from dotenv import load_dotenv
 from sqlmodel import Session, select
-from jose import jwt, JWTError, ExpiredSignatureError
+from jose import jwt, JWTError
 from typing import Optional
 from datetime import datetime, timezone, timedelta
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
-from models.users import User
-from models.token import TokenData, Token
+from api.models.users import User
+from api.models.token import TokenData
 from .passw_utils import PasswordUtils
 from .db_utils import get_session
 
