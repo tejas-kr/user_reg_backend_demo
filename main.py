@@ -3,10 +3,10 @@ from contextlib import asynccontextmanager
 from typing import AsyncGenerator
 from fastapi import FastAPI
 from sqlmodel import SQLModel
-from .utils.log_util import logger
-from .utils.db_utils import engine
-from .auth import users
-from .books import books
+from utils.log_util import logger
+from utils.db_utils import engine
+from auth import users
+from books import books
 
 
 @asynccontextmanager

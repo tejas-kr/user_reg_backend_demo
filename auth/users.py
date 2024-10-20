@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlmodel import Session, select
 from datetime import timedelta
-from ..models.users import UserCreate, UserBase, User, UserLogin
-from ..models.token import Token, TokenData
-from ..utils.db_utils import get_session
-from ..utils.passw_utils import PasswordUtils
-from ..utils.auth_utils import authenticate_user, generate_token
+from models.users import UserCreate, UserBase, User, UserLogin
+from models.token import Token, TokenData
+from utils.db_utils import get_session
+from utils.passw_utils import PasswordUtils
+from utils.auth_utils import authenticate_user, generate_token
 
 router = APIRouter(
     prefix="/auth",
