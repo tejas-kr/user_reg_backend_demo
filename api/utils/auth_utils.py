@@ -8,8 +8,8 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from api.models.users import User
 from api.models.token import TokenData
-from .passw_utils import PasswordUtils
-from .db_utils import get_session
+from api.utils.passw_utils import PasswordUtils
+from api.utils.db_utils import get_session
 
 load_dotenv()
 
