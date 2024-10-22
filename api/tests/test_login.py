@@ -1,13 +1,10 @@
 import pytest
 from fastapi.testclient import TestClient
 from sqlmodel import SQLModel, Session, create_engine
-from ..main import app
-from ..utils.db_utils import get_session
-from ..utils.auth_utils import get_current_user
-from ..models.token import Token, TokenData
-from ..models.users import (
-    User, UserLogin, UserBase, UserCreate, UserPass,
-)
+from api.main import app
+from api.utils.db_utils import get_session
+from api.utils.auth_utils import get_current_user
+from api.models.users import User
 
 
 test_engine = create_engine("sqlite:///:memory:", echo=True)
